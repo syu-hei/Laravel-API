@@ -1,1 +1,1 @@
-# laravel-game_server
+ユーザープロフィールテーブルを作成します。
