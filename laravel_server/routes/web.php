@@ -14,4 +14,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('registration', 'RegistrationController@Registration');
-Route::resource('/login', 'LoginController@Login');
+Route::resource('login', 'LoginController@Login');
+Route::resource('quest_tutorial', 'QuestController@Tutorial');
