@@ -16,3 +16,5 @@ Route::get('/', function () {
 Route::resource('registration', 'RegistrationController@Registration');
 Route::resource('login', 'LoginController@Login');
 Route::resource('quest_tutorial', 'QuestController@Tutorial');
+Route::resource('quest_start', 'QuestController@Start');
+Route::resource('quest_end', 'QuestController@End');

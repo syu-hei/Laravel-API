@@ -1,1 +1,1 @@
-{"master_login_item":[{"login_day":1,"item_type":2,"item_count":3}]}
+{"master_login_item":[{"login_day":1,"item_type":2,"item_count":3}],"master_quest":[{"quest_id":1,"quest_name":"first_stage","open_at":"2019-01-01 12:00:00","close_at":"2020-01-01 12:00:00","item_type":2,"item_count":5}]}
