@@ -4,6 +4,7 @@ namespace App\Libs;
 
 use App\MasterLoginItem;
 use App\MasterQuest;
+use App\MasterCharacter;
 
 class MasterDataService {
 	public static function GenerateMasterData($version) {
@@ -15,6 +16,7 @@ class MasterDataService {
 		//master dataを追加
 		$master_data_list['master_login_item'] = MasterLoginItem::all();
 		$master_data_list['master_quest'] = MasterQuest::all();
+		$master_data_list['master_character'] = MasterCharacter::all();
 
 
 		$json = json_encode($master_data_list);
