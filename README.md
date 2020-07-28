@@ -1,7 +1,7 @@
 # クエスト開始時、終了時の設定
 • master_questテーブルの作成  
 • user_questテーブルの作成  
-• クエストのマスターデータを作成(JSONファイル)  
+• クエストのマスターデータを作成(JSON)  
 ※マスターデータとは、アイテムの価格などユーザーに依存しないデータの事です。
 ## master_quest table
 |Column|Type|option
