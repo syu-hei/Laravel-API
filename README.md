@@ -1,10 +1,15 @@
-# ショップの設定を行いました。
-• master_shop tableの作成  
-• ショップの商品データ管理(有償クリスタルの個数と価格などを設定)
-• 商品のマスターデータ作成(JSON)  
-## master_shop table
+# プレゼント機能の設定を行いました。
+• user_present tableの作成  
+• 付与されたアイテムをユーザーが取得したいタイミングで獲得できるよう設定  
+• プレゼントのデータが大きくなりすぎないよう、プレゼントアイテムに取得期限をつけ、  
+期限を過ぎたものは破棄する  
+## present table
 |Column|Type|option
 |------|----|----|
-|shop_id|varchar|商品ID|
-|cost|int|価格|
-|amount|int|個数|
+|user_id|varchar|ユーザーID|
+|present_id|bigint|価格|
+|item_type|smallint|1:有償クリスタル 2:無償クリスタル 3:フレンドコイン|
+|description|varchar|説明文|
+|limited_at|timestamp|取得期限|
+|updated_at|timestamp|user_present tableが作成された日時|
+|created_at|timestampuser_present tableが最後に更新された日時|

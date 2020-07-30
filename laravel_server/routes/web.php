@@ -22,3 +22,5 @@ Route::resource('character', 'CharacterController@GetCharacterList');
 Route::resource('character_sell', 'CharacterController@SellCharacter');
 Route::resource('/gacha', 'GachaController@DrawGacha');
 Route::resource('/shop', 'ShopController@BuyItem');
+Route::resource('/present_list', 'presentController@GetPresentList');
+Route::resource('/present', 'presentController@GetItem');
