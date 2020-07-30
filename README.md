@@ -7,9 +7,10 @@
 |Column|Type|option
 |------|----|----|
 |user_id|varchar|ユーザーID|
-|present_id|bigint|価格|
+|present_id|bigint|プレゼントのID|
 |item_type|smallint|1:有償クリスタル 2:無償クリスタル 3:フレンドコイン|
-|description|varchar|説明文|
-|limited_at|timestamp|取得期限|
+|item_count|int|付与個数|
+|description|varchar|プレゼント表示画面での説明文|
+|limited_at|timestamp|プレゼントアイテムの取得期限|
 |updated_at|timestamp|user_present tableが作成された日時|
 |created_at|timestamp|user_present tableが最後に更新された日時|
