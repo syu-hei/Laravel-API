@@ -12,4 +12,4 @@
 |description|varchar|説明文|
 |limited_at|timestamp|取得期限|
 |updated_at|timestamp|user_present tableが作成された日時|
-|created_at|timestampuser_present tableが最後に更新された日時|
+|created_at|timestamp|user_present tableが最後に更新された日時|
