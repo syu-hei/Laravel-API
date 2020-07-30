@@ -21,3 +21,4 @@ Route::resource('quest_end', 'QuestController@End');
 Route::resource('character', 'CharacterController@GetCharacterList');
 Route::resource('character_sell', 'CharacterController@SellCharacter');
 Route::resource('/gacha', 'GachaController@DrawGacha');
+Route::resource('/shop', 'ShopController@BuyItem');
