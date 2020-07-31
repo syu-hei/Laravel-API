@@ -24,3 +24,4 @@ Route::resource('/gacha', 'GachaController@DrawGacha');
 Route::resource('/shop', 'ShopController@BuyItem');
 Route::resource('/present_list', 'presentController@GetPresentList');
 Route::resource('/present', 'presentController@GetItem');
+
