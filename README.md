@@ -11,3 +11,9 @@
 |last_login_at|timestamp|最終ログイン日時|
 |updated_at|timestamp|user_loginを作成した日時|
 |created_at|timestamp|user_loginを更新した日時|
+## master_login_item table
+|Column|Type|option
+|------|----|----|
+|login_day|int|ログイン日数|
+|item_type|int|1:有償クリスタル 2:無償クリスタル 3:フレンドコイン|
+|item_count|int|付与個数|
