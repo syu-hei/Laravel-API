@@ -6,7 +6,7 @@
 ## user_login table
 |Column|Type|option
 |------|----|----|
-|user_id|varchar(37)|ユーザーID|
+|user_id|varchar|ユーザーID|
 |login_day|smallint|ログインした日数|
 |last_login_at|timestamp|最終ログイン日時|
 |updated_at|timestamp|user_loginを作成した日時|
