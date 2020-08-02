@@ -1,4 +1,4 @@
-# issueの解決
+# Issue
 ## error
 PHP Warning: require(/サーバーのパス/laravel-game_server-master/laravel_server/vendor/autoload.php): failed to open stream: No such file or directory in /サーバーのパス/laravel-game_server-master/laravel_server/artisan on line 18
 ## result
