@@ -8,7 +8,9 @@ use App\Libs\MasterDataService;
 class MasterCharacter extends Model
 {
 	protected $table = 'master_character';
+	public $incrementing = false;
 	protected $primaryKey = 'character_id';
+	public $timestamps = false;
 
 
 	public static function GetMasterCharacter()

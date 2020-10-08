@@ -8,7 +8,9 @@ use App\Libs\MasterDataService;
 class MasterQuest extends Model
 {
 	protected $table = 'master_quest';
+	public $incrementing = false;
 	protected $primaryKey = 'quest_id';
+	public $timestamps = false;
 
 	public static function GetMasterQuest()
 	{

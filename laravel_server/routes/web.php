@@ -10,18 +10,20 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('/', function () {
     return view('welcome');
 });
-Route::resource('registration', 'RegistrationController@Registration');
-Route::resource('login', 'LoginController@Login');
-Route::resource('quest_tutorial', 'QuestController@Tutorial');
-Route::resource('quest_start', 'QuestController@Start');
-Route::resource('quest_end', 'QuestController@End');
-Route::resource('character', 'CharacterController@GetCharacterList');
-Route::resource('character_sell', 'CharacterController@SellCharacter');
-Route::resource('/gacha', 'GachaController@DrawGacha');
-Route::resource('/shop', 'ShopController@BuyItem');
-Route::resource('/present_list', 'presentController@GetPresentList');
-Route::resource('/present', 'presentController@GetItem');
+Route::get('/master_data', 'MasterDataController@Get');
+Route::get('/registration', 'RegistrationController@Registration');
+Route::get('/login', 'LoginController@Login');
+Route::get('/quest_tutorial', 'QuestController@Tutorial');
+Route::get('/quest_start', 'QuestController@Start');
+Route::get('/quest_end', 'QuestController@End');
+Route::get('/character', 'CharacterController@GetCharacterList');
+Route::get('/character_sell', 'CharacterController@SellCharacter');
+Route::get('/gacha', 'GachaController@DrawGacha');
+Route::get('/shop', 'ShopController@BuyItem');
+Route::get('/present_list', 'presentController@GetPresentList');
+Route::get('/present', 'presentController@GetItem');
 

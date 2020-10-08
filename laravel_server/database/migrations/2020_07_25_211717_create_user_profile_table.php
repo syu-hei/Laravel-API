@@ -4,7 +4,8 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUserProfileTable extends Migration {
+class CreateUserProfileTable extends Migration 
+{
     public function up() {
         Schema::create('user_profile', function (Blueprint $table) {
 			$table->string('user_id', 37)->charset('utf8');
