@@ -1,4 +1,4 @@
-# laravel-game_server
+# Laravel-API
 Laravelで作成したWAPIサーバーです。
 ## 実装機能
 ### User
