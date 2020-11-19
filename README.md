@@ -1,5 +1,5 @@
 # laravel-game_server
-Laravelで作成したAPIです。
+Laravelで作成したWAPIサーバーです。
 ## 実装機能
 ### User
 • ユーザーID, 初期データを設定してクライアント側に返します。
