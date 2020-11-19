@@ -1,5 +1,5 @@
 # Laravel-API
-Laravelで作成したWAPIサーバーです。
+Laravelで作成したAPIサーバーです。
 ## 実装機能
 ### User
 • ユーザーID, 初期データを設定してクライアント側に返します。
