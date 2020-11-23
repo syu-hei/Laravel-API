@@ -58,7 +58,6 @@ class QuestController extends Controller
 
 		//user_profileテーブルからレコードを取得
 		$user_profile = UserProfile::where('user_id', $user_id)->first();
-		//レコード存在チェック
 		if (!$user_profile) {
 			return config('error.ERROR_INVALID_DATA');
 		}
@@ -145,6 +144,8 @@ class QuestController extends Controller
 		}
 
 		//初回クリア報酬
+		logger($user_profile->crystal);
+		logger($master_quest->item_count);
 		if ($user_quest->status != config('constants.QUEST_CLEAR')) {
 			switch ($master_quest->item_type) {
 				case config('constants.ITEM_TYPE_CRYSTAL'):
