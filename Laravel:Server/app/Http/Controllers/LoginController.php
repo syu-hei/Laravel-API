@@ -50,20 +50,16 @@ class LoginController extends Controller
 
 
 			if (!is_null($master_login_item)) {
-				//プレゼント作成
 				$user_present->user_id = $user_id;
 				$user_present->item_type = $master_login_item->item_type;
 				$user_present->item_count = $master_login_item->item_count;
 				$user_present->description = 'Loginbonus';
-
 				$user_present->limited_at = date('Y-m-d', (time() + (60 * 60 * 24 * 30)));
 			}
 		}
 
-		//ログイン時刻の更新
 		$user_login->last_login_at = date("Y-m-d H:i:s");
 
-		//データの書き込み
 		try {
 			if (isset($user_present->user_id)) {
 				$user_present->save();
